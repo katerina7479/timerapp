@@ -1,4 +1,6 @@
 var webpack = require('webpack')
+var path = require('path')
+
 
 if (process.env.NODE_ENV == 'dev') {
   require('dotenv').config();
@@ -54,6 +56,11 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /(node_modules|bower-components|Makefile)/
     }]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
+    ]
   },
   plugins: [
     env_plugin,
