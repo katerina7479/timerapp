@@ -1,6 +1,7 @@
 var React = require('react');
 var { Link, IndexLink } = require('react-router');
 
+
 var Navigation = (props) => {
   return (
     <div className="top-bar dark">

@@ -23,4 +23,4 @@ var CounterForm = React.createClass({
   }
 });
 
-module.exports = CounterForm
+module.exports = CounterForm;
