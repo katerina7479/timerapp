@@ -8,7 +8,6 @@ var Main = (props) => {
       <Navigation />
         <div className="row">
           <div className="columns medium-6 large-4 small-centered">
-            <h2>Main</h2>
             {props.children}
           </div>
         </div>
